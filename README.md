@@ -1,4 +1,4 @@
-# Learn_Neo4j
+<h1> Learn_Neo4j </h1>
 * Description: This is a repository created while learning how to use a graph data base. In particular learning Neo4j
 
 ## Overview:
@@ -9,7 +9,7 @@
 
 
 ## Getting a database up and runnnig.
-We will start our Neo4j instace inside a docker container.
+We will start our Neo4j instace inside a docker container. You will need to <a href="https://docs.docker.com/get-docker/">install docker</a> don't have it installed.
 ```
 docker run \
     --name learn_neo4j_db \
@@ -23,8 +23,18 @@ docker run \
     neo4j:latest
 ```
 * This will start a docker container running in the background.
-* It will create a neo4j directory inside your home directory.
+* It will create a neo4j directory inside your home directory. 
+* If you previously created a database, it will use the data from the neo4j diretory and continue from the older graph.
 * Take note of the neo4j/ import directory. This is where you will store any datafile that you want to import using LOAD CSV.
+* Also, all the data that you stored in the database will be stored inside the neo4j directory. This enables the user to restart the
+    db and continue with the same database, as well as share the database.
+* After starting the open a brower window and search the following.
+```
+    your_local_ip_address:7474
+```
+username: neo4j
+password: your_own_password
+
 
 ## Importing data into the database.
 * There are many ways to import data into Neo4j. We will consider 2
