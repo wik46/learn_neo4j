@@ -12,7 +12,7 @@
 We will start our Neo4j instace inside a docker container.
 ```
 docker run \
-    --name my_db \
+    --name learn_neo4j_db \
     -p7474:7474 -p7687:7687 \
     -d \
     -v $HOME/neo4j/data:/data \
