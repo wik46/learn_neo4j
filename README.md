@@ -9,7 +9,7 @@
 
 
 ## Getting a database up and runnnig.
-We will start our Neo4j instace inside a docker container. You will need to <a href="https://docs.docker.com/get-docker/">install docker</a> don't have it installed.
+We will start our Neo4j instace inside a docker container. You will need to <a href="https://docs.docker.com/get-docker/">install docker</a> of you don't have it installed.
 ```
 docker run \
     --name learn_neo4j_db \
